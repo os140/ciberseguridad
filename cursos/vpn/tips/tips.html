@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendaciones de Ciberseguridad</title>
+  <link rel="stylesheet" href="css/tips.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="fade-in">
+    <header class="py-16 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg rounded-lg">
+        <h1 class="text-4xl font-extrabold mb-4">Recomendaciones de Ciberseguridad</h1>
+        <p class="text-xl font-medium">Consejos prácticos para proteger tu información en línea</p>
+      </header>
+    <div class="h-20"></div>
+  <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="tip-card">
+      <h3 class="font-bold text-xl">Usa una VPN</h3>
+      <p>Cifra tu conexión para proteger tu privacidad, especialmente en redes públicas.</p>
+    </div>
+    <div class="tip-card">
+      <h3 class="font-bold text-xl">Cuidado con el Phishing</h3>
+      <p>Verifica la URL y el remitente antes de hacer clic en enlaces sospechosos.</p>
+    </div>
+    <div class="tip-card">
+      <h3 class="font-bold text-xl">Prevén el Error Humano</h3>
+      <p>Capacita a los usuarios y usa autenticación de dos factores para más seguridad.</p>
+    </div>
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md">
+        <h3 class="font-bold text-xl">Usa Contraseñas Seguras</h3>
+        <p>Utiliza combinaciones de mayúsculas, minúsculas, números y caracteres especiales.</p>
+      </div>
+      <div class="p-6 bg-blue-100 rounded-lg shadow-md">
+        <h3 class="font-bold text-xl">Autenticación en Dos Pasos</h3>
+        <p>Habilita la autenticación de dos factores para mayor seguridad en tus cuentas.</p>
+      </div>
+      <div class="p-6 bg-blue-100 rounded-lg shadow-md">
+        <h3 class="font-bold text-xl">Actualiza tu Software</h3>
+        <p>Mantén tu sistema operativo y aplicaciones actualizadas para evitar vulnerabilidades.</p>
+      </div>
+  </main>
+  <div id="ai-button" class="floating-button">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 14c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08c-1.29 1.94-3.5 3.22-6 3.22z"/>
+    </svg>
+  </div>
+
+
+      
+  <div id="chat-window" class="chat-window">
+    <div class="chat-header">Asistente IA</div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-footer">
+        <input type="text" id="pregunta1" placeholder="Escribe tu pregunta...">
+        <button id="enviar-btn">Enviar</button>
+        <div id="resultados" class="resultados"></div>
+    </div>
+</div>
+<script type="module" src="js/principal.js"></script>
+</body>
+</html>

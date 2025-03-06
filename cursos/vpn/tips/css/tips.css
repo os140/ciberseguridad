@@ -1,0 +1,102 @@
+
+body {
+ font-family: 'Arial', sans-serif;
+ background-color: #ffffff;
+ color: #000000;
+}
+@keyframes fadeIn {
+ from { opacity: 0; transform: translateY(20px); }
+ to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+ animation: fadeIn 1s ease-out;
+}
+
+
+/* Botón flotante */
+.floating-button {
+    position: fixed;
+    left: 20px; /* Posición inicial */
+    bottom: 20px; /* Posición inicial */
+    background-color: #0d47a1;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: grab; /* Cambia el cursor al arrastrar */
+    transition: transform 0.2s ease-in-out;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+/* Ventana de chat */
+.chat-window {
+    display: none; /* Inicialmente oculta */
+    position: fixed;
+    bottom: 80px; /* Posición inicial */
+    left: 20px; /* Posición inicial */
+    width: 300px; /* Tamaño fijo */
+    height: 400px; /* Tamaño fijo */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.draggable {
+ position: absolute;
+ cursor: grab;
+}
+.tip-card {
+ background-color: #e3f2fd;
+ border-radius: 12px;
+ padding: 20px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tip-card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.chat-header {
+ font-weight: bold;
+ text-align: center;
+ padding: 10px;
+ background: #0d47a1;
+ color: white;
+ border-radius: 10px 10px 0 0;
+}
+.chat-body {
+ max-height: 200px;
+ overflow-y: auto;
+ padding: 10px;
+}
+.chat-footer {
+ display: flex;
+ padding: 10px;
+}
+.chat-footer input {
+ flex: 1;
+ padding: 5px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+.chat-footer button {
+ margin-left: 5px;
+ background: #0d47a1;
+ color: white;
+ border: none;
+ padding: 5px 10px;
+ border-radius: 5px;
+ cursor: pointer;
+}
