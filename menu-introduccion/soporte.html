@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Errores - MasterFVH</title>
+    <link rel="stylesheet" href="../reguintro/css/soporte.css"> <!-- Enlaza tu archivo CSS aquí -->
+</head>
+<body>
+    <div class="container">
+        <h1>Reportar Errores</h1>
+        <form id="errorForm">
+            <div class="field">
+                <label for="message">Describe el error o problema:</label>
+                <textarea name="message" id="message" placeholder="Escribe aquí..." required></textarea>
+            </div>
+            <input type="submit" id="button" value="Enviar">
+        </form>
+    </div>
+
+    <!-- Script de EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Inicializar EmailJS con tu User ID
+        emailjs.init('VgBqkgiUUJAPuvsX0'); // Reemplaza con tu User ID de EmailJS
+    </script>
+    <!-- Tu archivo JavaScript -->
+    <script src="../reguintro/javascrip/soporte.js"></script>
+</body>
+</html>
