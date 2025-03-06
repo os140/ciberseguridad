@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPNs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="reguintro/css/curso2.css">
+</head>
+
+<body class="font-sans">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar -->
+        <div class="sidebar bg-blue-900 w-full md:w-1/4 p-4 border-r border-gray-700 shadow-lg">
+            <div class="flex items-center mb-6">
+                <img src="https://storage.googleapis.com/a1aa/image/D95qxuNUV_sg7ow1I-uKoqFA_CishkkcwhWID6eV5Ms.jpg"
+                    width="50" height="50" alt="Ciberseguridad" class="mr-2 rounded-full" />
+                <span class="text-lg font-semibold">Academy</span>
+            </div>
+            <h2 class="text-xl font-bold mb-4">Course Outline</h2>
+           <div>  </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold cursor-pointer" onclick="toggleMenu('modulo1-menu')">Módulo 1:
+                    Introducción a las Vpn's</h3>
+                <ul id="modulo1-menu" class="ml-4 list-disc text-gray-300" style="display: none;">
+                    <li><a href="#" onclick="mostrarModulo('modulo1-que-es')">¿Qué es una vpn?</a></li>
+                    <li><a href="#" onclick="mostrarModulo('modulo1-historia')">Historia y evolución</a></li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold cursor-pointer" onclick="toggleMenu('modulo2-menu')">Módulo 2: Tipos de vpn</h3>
+                <ul id="modulo2-menu" class="ml-4 list-disc" style="display: none;">
+                    <li><a href="#" onclick="mostrarModulo('modulo2')">VPN de acceso remoto</a></li>
+                    <li><a href="#" onclick="mostrarModulo('modulo2-smishing')">VPN de sitio a sitio </a></li>
+                    <li><a href="#" onclick="mostrarModulo('modulo2-vishing')">VPN basadas en la nube </a></li>
+                    <li><a href="#" onclick="mostrarModulo('modulo2-pharming')">VPN SSL/TLS </a></li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold cursor-pointer" onclick="toggleMenu('modulo3-menu')">Módulo 3:
+                    Ventajas y uso</h3>
+                <ul id="modulo3-menu" class="ml-4 list-disc" style="display: none;">
+                    <li><a href="#" onclick="mostrarModulo('modulo3')"></a>Uso Correcto de una VPN</li>
+                    <li><a href="#" onclick="mostrarModulo('modulo3-herramientas')">Ventajas de Usar una VPN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->                                                      <!-- Sidebar -->
+        <div class="flex-1 p-6">
+            <div class="flex items-center justify-between mb-6">
+                <h1 class="text-3xl font-bold">VPNs</h1>
+                <div class="flex items-center space-x-4">
+                    <a href="introduccion.php">
+                        <button class="text-gray-400 hover:text-white">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- Resto de los módulos aquí... -->
+
+            <div id="modulo1-que-es" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">¿Qué es una VPN?</h2>
+                <p class="text-white mb-4">
+                    Una <strong>VPN (Red Privada Virtual)</strong> es una tecnología que te permite crear una conexión segura y cifrada a través de Internet. 
+                    Funciona como un "túnel" privado entre tu dispositivo y un servidor remoto, protegiendo tu información de miradas indiscretas.
+                </p>
+                <p class="text-white mb-4">
+                    <strong>¿Para qué sirve?</strong>
+                </p>
+                <ul class="text-white list-disc list-inside mb-4">
+                    <li>Proteger tu privacidad en línea.</li>
+                    <li>Acceder a contenido restringido por región (como Netflix de otros países).</li>
+                    <li>Navegar de forma segura en redes públicas (como el Wi-Fi de un café).</li>
+                </ul>
+                <p class="text-white mb-4">
+                    <strong>Ejemplo:</strong> Imagina que estás enviando una carta. Sin VPN, es como enviarla en un sobre transparente: cualquiera puede leerla. 
+                    Con VPN, es como enviarla en un sobre sellado y a prueba de manipulaciones.
+                </p>
+            </div>
+
+
+            <!--  -->
+                        <div id="modulo1-historia" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">Historia y evolución de las VPNs</h2>
+                <p class="text-white mb-4">
+                    Las VPNs surgieron en la década de 1990 como una solución para que las empresas conectaran de forma segura a sus empleados 
+                    remotos con sus redes internas. En aquel entonces, el objetivo principal era proteger datos sensibles.
+                </p>
+                <p class="text-white mb-4">
+                    <strong>Evolución:</strong>
+                </p>
+                <ul class="text-white list-disc list-inside mb-4">
+                    <li><strong>Años 90:</strong> Uso exclusivo en entornos corporativos.</li>
+                    <li><strong>Años 2000:</strong> Popularización entre usuarios individuales para proteger la privacidad.</li>
+                    <li><strong>Actualidad:</strong> Amplio uso para acceder a contenido geo-restringido y evitar la censura en Internet.</li>
+                </ul>
+                <p class="text-white mb-4">
+                    Hoy en día, las VPNs son una herramienta esencial para cualquier persona que valore su privacidad y seguridad en línea.
+                </p>
+            </div>
+            
+
+             <!-- Módulo 2: Tipos de VPN -->
+             <div id="modulo2" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">VPN de acceso remoto</h2>
+                <p class="text-white mb-4">
+                    Una <strong>VPN de acceso remoto</strong> permite a los usuarios conectarse a una red privada desde cualquier lugar, 
+                    como si estuvieran físicamente en la oficina. Es ideal para trabajadores remotos o personas que necesitan 
+                    acceder a recursos de la empresa de forma segura.
+                </p>
+                <p class="text-white mb-4">
+                    <strong>Ejemplo:</strong> Un empleado que trabaja desde casa usa una VPN para acceder a los archivos de la empresa 
+                    sin riesgo de que los datos sean interceptados.
+                </p>
+            </div>
+
+            <div id="modulo2-smishing" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">VPN de sitio a sitio </h2>
+                <p class="text-white mb-4">
+                    Una <strong>VPN de sitio a sitio</strong> conecta dos o más redes locales (LAN) a través de Internet. 
+                    Es común en empresas con varias sucursales que necesitan compartir datos de forma segura.
+                </p>
+                <p class="text-white mb-4">
+                    <strong>Ejemplo:</strong> Una empresa con oficinas en Madrid y Barcelona usa una VPN de sitio a sitio para que 
+                    ambas sucursales compartan archivos y recursos como si estuvieran en la misma red.
+                </p>
+            </div>
+
+            <div id="modulo2-vishing" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">VPN basadas en la nube </h2>
+                <p class="text-white mb-4">
+                    Las <strong>VPN basadas en la nube</strong> son servicios proporcionados por proveedores de nube como AWS, Google Cloud o Azure. 
+                    Permiten a las empresas conectar sus redes locales con servidores en la nube de forma segura.
+                </p>
+                <p class="text-white mb-4">
+                    <strong>Ejemplo:</strong> Una empresa usa una VPN en la nube para conectar su base de datos local con una aplicación 
+                    alojada en Google Cloud.
+                </p>
+            </div>
+
+            <div id="modulo2-pharming" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">VPN SSL/TLS </h2>
+                <p class="text-white mb-4">
+                    Una <strong>VPN SSL/TLS</strong> utiliza el protocolo de seguridad SSL/TLS (el mismo que protege las conexiones HTTPS) 
+                    para crear una conexión segura. Es común en navegadores web y aplicaciones que requieren alta seguridad.
+                </p>
+                <p class="text-white mb-4">
+                    <strong>Ejemplo:</strong> Un usuario accede a su banco en línea a través de una VPN SSL/TLS para asegurarse de que 
+                    sus datos financieros estén protegidos.
+                </p>
+            </div>
+
+            <!-- Módulo 3: Ventajas y uso -->
+            <div id="modulo3" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">Uso correcto de una VPN</h2>
+                <p class="text-white mb-4">
+                    Para aprovechar al máximo una VPN, sigue estos consejos:
+                </p>
+                <ul class="text-white list-disc list-inside mb-4">
+                    <li>Elige un proveedor de VPN confiable y con buena reputación.</li>
+                    <li>Conéctate siempre a servidores cercanos para obtener la mejor velocidad.</li>
+                    <li>Activa la VPN antes de acceder a redes públicas o compartir información sensible.</li>
+                    <li>Verifica que la VPN esté activa antes de realizar transacciones en línea.</li>
+                </ul>
+            </div>
+
+            <div id="modulo3-herramientas" class="modulo bg-blue-800 p-6 rounded-lg shadow-lg hidden">
+                <h2 class="text-xl font-semibold mb-4 text-white">Ventajas de usar una VPN</h2>
+                <p class="text-white mb-4">
+                    Las principales ventajas de usar una VPN son:
+                </p>
+                <ul class="text-white list-disc list-inside mb-4">
+                    <li><strong>Privacidad:</strong> Oculta tu dirección IP y protege tu identidad en línea.</li>
+                    <li><strong>Seguridad:</strong> Cifra tus datos para evitar que sean interceptados.</li>
+                    <li><strong>Acceso global:</strong> Permite acceder a contenido bloqueado por región.</li>
+                    <li><strong>Protección en redes públicas:</strong> Te protege al usar Wi-Fi en cafés, aeropuertos, etc.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="reguintro/javascrip/curso2_move.js"></script>
+
+    <script src="reguintro/javascrip/ventana_respuesta.js"></script>
+</body>
+
+</html>
